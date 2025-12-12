@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Neon Pong P2P",
+  "description": "A peer-to-peer multiplayer pong game with a retro neon aesthetic. Create a game to get a code, share it with a friend, and play directly in your browser using WebRTC.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Pong P2P</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- We load PeerJS from a CDN. This library handles the WebRTC connection magic. -->
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+    <style>
+      @keyframes flicker {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.8; }
+      }
+      .text-glow {
+        text-shadow: 0 0 5px #059669, 0 0 10px #059669, 0 0 15px #059669;
+      }
+      .flicker {
+        animation: flicker 1.5s infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
